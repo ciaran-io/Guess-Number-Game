@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+  background-color: black;
+  /* background-color: #60b347; */
+}
+
+/* LAYOUT */
+header {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+main section:first-of-type {
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+}
+
+div.computer-guess {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+div.computer-guess > span {
+  border:2px solid red;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+main section:nth-of-type(2n) {
+  display: grid;
+  gap: 2rem;
+  width: 80%;
+  align-items: center;
+  /* justify-content: center; */
+  margin: auto;
+  padding-top: 4rem;
+}
+
+.players-health {
+  color: red;
+}
+
+div.player-buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* input styles */
+input {
+  font-size:2rem;
+  color: red;
+  border: none;
+  border-bottom: 1px solid red ;
+  background-color: inherit;
+  padding: 0.5rem;
+  margin: 2rem 0;
+  /* border-color: red; */
+}
+
+input:focus {
+  outline: none;
+}
+
+/* button styles */
+button {
+  background-color: inherit;
+  border-color:red;
+  border-radius: 0.5rem;
+  color: red;
+  font-size: 2rem ;
+  padding: 1rem;
+}
+
+button#new-game-hidden{
+  display: none;
+}
